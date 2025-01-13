@@ -1,0 +1,136 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #1a1a2e;
+    color: white;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #00aaff;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #00aaff;
+}
+
+header .btn-download {
+    padding: 10px 20px;
+    background-color: #ff007f;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(to right, #1a1a2e, #16213e);
+    color: white;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+    color: #00aaff;
+}
+
+.hero p {
+    margin: 10px 0;
+}
+
+.hero-buttons {
+    margin-top: 20px;
+}
+
+.hero-buttons .btn {
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: #00aaff;
+    color: white;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.hero-buttons .btn:hover {
+    background-color: #005f9e;
+}
+
+.social-icons a {
+    color: white;
+    margin: 0 10px;
+    font-size: 24px;
+}
+
+/* Footer */
+footer {
+    background-color: #1a1a2e;
+    color: white;
+    text-align: center;
+    padding: 20px 50px;
+}
+
+footer .stats {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+footer .stats div {
+    text-align: center;
+}
+
+footer .stats h2 {
+    font-size: 24px;
+    color: #00aaff;
+}
+
+footer .stats p {
+    font-size: 14px;
+}
+
+/* Animations */
+.hero h1 span, .hero-buttons .btn {
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
